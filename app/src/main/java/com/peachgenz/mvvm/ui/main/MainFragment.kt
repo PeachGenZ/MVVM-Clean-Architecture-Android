@@ -1,4 +1,4 @@
-package com.peachgenz.mvvm.ui
+package com.peachgenz.mvvm.ui.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,9 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.peachgenz.mvvm.databinding.FragmentMainBinding
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 class MainFragment : Fragment() {
     private lateinit var binding: FragmentMainBinding
+
+    private val viewModel by sharedViewModel<MainViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,7 +29,9 @@ class MainFragment : Fragment() {
     }
 
     private fun attachObserver() {
+        with(viewModel) {
 
+        }
     }
 
     private fun initView() {
