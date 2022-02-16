@@ -1,11 +1,24 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     ext {
         versions = [
                 koin  : '3.1.5',
-                timber: '5.0.1'
+                timber: '5.0.1',
+                navigation: '2.4.1'
         ]
     }
-}// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$versions.navigation"
+    }
+}
+
+
 plugins {
     id 'com.android.application' version '7.1.1' apply false
     id 'com.android.library' version '7.1.1' apply false
