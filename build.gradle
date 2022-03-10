@@ -4,7 +4,10 @@ buildscript {
         versions = [
                 koin  : '3.1.5',
                 timber: '5.0.1',
-                navigation: '2.4.1'
+                navigation: '2.4.1',
+                retrofit2: '2.9.0',
+                okhttp3: '4.9.3',
+                gson: '2.8.9'
         ]
     }
 

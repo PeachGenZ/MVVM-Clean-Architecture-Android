@@ -17,7 +17,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    buildFeatures{
+    buildFeatures {
         viewBinding true
     }
 
@@ -60,4 +60,14 @@ dependencies {
 
     //Timber
     implementation "com.jakewharton.timber:timber:$versions.timber"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:converter-gson:$versions.retrofit2"
+    implementation "com.squareup.retrofit2:retrofit:$versions.retrofit2"
+
+    //OkHttp
+    implementation "com.squareup.okhttp3:logging-interceptor:${versions.okhttp3}"
+
+    // Gson
+    implementation "com.google.code.gson:gson:${versions.gson}"
 }
