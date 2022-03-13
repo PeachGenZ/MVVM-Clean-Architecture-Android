@@ -1,5 +1,7 @@
 package com.peachgenz.mvvm.api
 
+import com.peachgenz.mvvm.api.service.NewsService
+import com.peachgenz.mvvm.constant.BaseUrl
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -11,4 +13,8 @@ class ApiManager(
         client(networkClient.getClient())
         addConverterFactory(GsonConverterFactory.create())
     }.build()
+
+    fun news(): NewsService = initRetrofit(
+        baseUrl = BaseUrl.URL
+    ).create(NewsService::class.java)
 }

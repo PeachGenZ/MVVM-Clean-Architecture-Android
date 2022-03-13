@@ -1,5 +1,6 @@
 package com.peachgenz.mvvm.api
 
+import com.peachgenz.mvvm.BuildConfig
 import com.peachgenz.mvvm.utils.HttpPrettyLogger
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -12,7 +13,9 @@ class NetworkClient() {
         return OkHttpClient.Builder().apply {
             readTimeout(30, TimeUnit.SECONDS)
             connectTimeout(30, TimeUnit.SECONDS)
-            addInterceptor(getHttpLoggingInterceptor())
+            if(BuildConfig.DEBUG){
+                addInterceptor(getHttpLoggingInterceptor())
+            }
         }.build()
     }
 
