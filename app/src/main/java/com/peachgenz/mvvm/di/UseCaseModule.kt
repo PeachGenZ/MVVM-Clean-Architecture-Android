@@ -1,6 +1,6 @@
 package com.peachgenz.mvvm.di
 
-import com.peachgenz.mvvm.domain.News.GetTopNewsUseCase
+import com.peachgenz.mvvm.domain.news.GetTopNewsUseCase
 import kotlinx.coroutines.Dispatchers
 import org.koin.dsl.module
 

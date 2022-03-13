@@ -3,7 +3,7 @@ package com.peachgenz.mvvm.ui.main
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.peachgenz.mvvm.domain.News.GetTopNewsUseCase
+import com.peachgenz.mvvm.domain.news.GetTopNewsUseCase
 import com.peachgenz.mvvm.model.NewsResponse
 import com.peachgenz.mvvm.ui.core.BaseViewModel
 import kotlinx.coroutines.launch

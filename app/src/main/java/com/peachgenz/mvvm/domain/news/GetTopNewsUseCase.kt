@@ -1,4 +1,4 @@
-package com.peachgenz.mvvm.domain.News
+package com.peachgenz.mvvm.domain.news
 
 import com.peachgenz.mvvm.domain.CoroutineNonParamUseCase
 import com.peachgenz.mvvm.model.NewsResponse
